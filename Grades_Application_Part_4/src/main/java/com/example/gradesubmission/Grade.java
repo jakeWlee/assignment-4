@@ -1,0 +1,71 @@
+package com.example.gradesubmission;
+
+import java.util.UUID;
+
+import javax.validation.constraints.NotBlank;
+
+public class Grade {
+
+    @NotBlank(message = "Name cannot be blank")
+    private String name;
+    @NotBlank(message = "Subject cannot be blank")
+    private String subject;
+    @NotBlank(message = "Major cannot be blank")
+    private String major;
+    @NotBlank(message = "Minor cannot be blank")
+    private String minor;
+    private String score;
+    private String id;
+
+    public Grade() {
+        this.id = UUID.randomUUID().toString();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
+
+    public String getMinor() {
+        return minor;
+    }
+
+    public void setMinor(String minor) {
+        this.minor = minor;
+    }
+
+    public String getScore() {
+        return score;
+    }
+
+    public void setScore(String score) {
+        this.score = score;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+}
