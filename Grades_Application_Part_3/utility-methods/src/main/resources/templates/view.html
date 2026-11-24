@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Utility Methods</title>
+    </head>
+    <body>
+        <h1 th:text="${#strings.contains(menu, 'Spring')}"></h1>
+        <h1 th:text="${#strings.contains(menu, 'Spring Boot')}
+                     ? 'Spring Boot is present' : 'Spring Boot is not present'"></h1>
+    </body>
+</html>
